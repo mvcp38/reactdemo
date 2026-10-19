@@ -1,0 +1,14 @@
+.card {
+  border: 1px solid;
+  width: 300px;
+  padding: 1rem;
+}
+
+.h2 {
+
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+}
