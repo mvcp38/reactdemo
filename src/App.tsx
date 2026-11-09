@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import './App.css'
 import Card from './Card'
-import { Button } from './components/Button'
+import styles from "./App.module.css"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +12,7 @@ function App() {
       <h1 className="h1">Vite + React</h1>
       <p>{count}</p>
       <input type="button" value="Increment" onClick={() => setCount(count + 1)} />
-      <div className="card-container">
+      <div className={styles.cardcontainer}>
         <Card title="My Card" image="https://via.placeholder.com/150" />
         <Card title="My Card" image="https://via.placeholder.com/150" />
         <Card title="My Card" image="https://via.placeholder.com/150" />
