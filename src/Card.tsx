@@ -2,8 +2,12 @@ import { Button } from './components/Button'
 import { useState } from 'react'
 import styles from "./Card.module.css"
 
+type Props = {
+  title: string;
+  image: string;
+}
 
-function Card({ title, image }: { title: string; image: string }) {
+function Card({ title, image }: Props) {
   const [likes, setLikes] = useState(0);
 
   return (
